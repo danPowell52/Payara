@@ -1,0 +1,88 @@
+/*
+
+ DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+
+ Copyright (c) 2015 C2B2 Consulting Limited. All rights reserved.
+
+ The contents of this file are subject to the terms of the Common Development
+ and Distribution License("CDDL") (collectively, the "License").  You
+ may not use this file except in compliance with the License.  You can
+ obtain a copy of the License at
+ https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html
+ or packager/legal/LICENSE.txt.  See the License for the specific
+ language governing permissions and limitations under the License.
+
+ When distributing the software, include this License Header Notice in each
+ file and include the License file at packager/legal/LICENSE.txt.
+ */
+package fish.payara.nucleus.healthcheck;
+
+import fish.payara.nucleus.cluster.PayaraCluster;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+import javax.annotation.PostConstruct;
+import javax.inject.Inject;
+import org.glassfish.api.StartupRunLevel;
+import org.glassfish.api.event.EventListener;
+import org.glassfish.api.event.EventTypes;
+import org.glassfish.api.event.Events;
+import org.glassfish.hk2.runlevel.RunLevel;
+import java.util.logging.Logger;
+import org.jvnet.hk2.annotations.Service;
+
+/**
+ *
+ * @author steve
+ */
+@Service(name = "healthcheck-core")
+@RunLevel(StartupRunLevel.VAL)
+public class HealthCheckService implements EventListener {
+    
+    private static final Logger logger = Logger.getLogger(HealthCheckService.class.getCanonicalName());
+    
+    @Inject
+    private Events events;
+    
+    @Inject
+    private PayaraCluster cluster;
+    
+    private ScheduledExecutorService executor;
+    
+    private final Map<String, HealthCheckTask> registeredTasks = new HashMap<>(5);
+    
+    @Override
+    public void event(Event event) {
+        if (event.is(EventTypes.SERVER_SHUTDOWN)) {
+                executor.shutdownNow();
+        } else if (event.is(EventTypes.SERVER_READY)) {
+            // schedule all the registered checkers
+            for (HealthCheckTask registeredTask : registeredTasks.values()) {
+                logger.info("Scheduling Health Check " + registeredTask.getName());
+                executor.scheduleAtFixedRate(registeredTask, 0, registeredTask.getPeriod(), registeredTask.getUnit());
+            }
+        }
+    }
+    
+    public void setCheckEnabled(String name, boolean state) {
+        HealthCheckTask task = registeredTasks.get(name);
+        if (task != null) {
+            task.setEnabled(state);
+        }
+    }
+    
+    public void registerCheck(String name, HealthCheck check, long time, TimeUnit unit) {
+        registeredTasks.put(name, new HealthCheckTask(name, time, unit, check));
+    }
+    
+
+    @PostConstruct
+    void postConstruct() {
+        executor = Executors.newScheduledThreadPool(2);
+        events.register(this);
+        logger.info("Payara Health Check Service Started");
+    }
+    
+}
