@@ -17,12 +17,16 @@
  */
 package fish.payara.appserver.demo.module;
 
+import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import org.glassfish.api.StartupRunLevel;
+import org.glassfish.api.event.EventListener;
+import org.glassfish.api.event.Events;
 import org.glassfish.hk2.runlevel.RunLevel;
 import org.jvnet.hk2.annotations.Service;
+
 
 /**
  *
@@ -30,16 +34,27 @@ import org.jvnet.hk2.annotations.Service;
  */
 @Service
 @RunLevel(StartupRunLevel.VAL)
-public class DemoService {
+public class DemoService implements EventListener {
       
     private static final Logger logger = Logger.getLogger(DemoService.class.getName());
     
+    
+    @Inject
+    private Events events;
+    
     @Inject
     DemoServiceConfiguration config;
+
     
     @PostConstruct
     public void postconstruct() {
         logger.info(config.getHelloWorldMessage());
+        events.register(this);
+    }
+
+    @Override
+    public void event(Event event) {    
+        logger.log(Level.INFO, "Got event {0} type {1}", new Object[]{event.name(), event.type()});  
     }
     
 }
