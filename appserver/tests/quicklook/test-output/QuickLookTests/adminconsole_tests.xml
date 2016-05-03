@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="adminconsole_tests" failures="0" tests="3" time="9.829" errors="0">
+  <properties/>
+  <testcase name="testDeployedAppPage" time="2.894" classname="test.admin.AdminConsoleTests"/>
+  <testcase name="testCommonTasks" time="0.129" classname="test.admin.AdminConsoleTests"/>
+  <testcase name="testRealmsList" time="0.143" classname="test.admin.AdminConsoleTests"/>
+</testsuite>

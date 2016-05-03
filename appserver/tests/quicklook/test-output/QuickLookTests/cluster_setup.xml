@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cluster_setup" failures="0" tests="3" time="62.965" errors="0">
+  <properties/>
+  <testcase name="createClusterTest" time="5.713" classname="test.clustersetup.ClusterSetupTest"/>
+  <testcase name="createInstanceTest" time="1.576" classname="test.clustersetup.ClusterSetupTest"/>
+  <testcase name="startInstanceTest" time="55.673" classname="test.clustersetup.ClusterSetupTest"/>
+</testsuite>

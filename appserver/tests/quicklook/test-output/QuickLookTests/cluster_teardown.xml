@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cluster_teardown" failures="0" tests="2" time="12.315" errors="0">
+  <properties/>
+  <testcase name="deleteInstanceTest" time="11.718" classname="test.clusterteardown.ClusterTeardownTest"/>
+  <testcase name="deleteClusterTest" time="0.597" classname="test.clusterteardown.ClusterTeardownTest"/>
+</testsuite>

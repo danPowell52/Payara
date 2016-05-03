@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="jms_injection_jmsContext" failures="0" tests="2" time="1.653" errors="0">
+  <properties/>
+  <testcase name="testRequestScopedJMSContextInjection" time="1.301" classname="test.jms.injection.ClientTestNG"/>
+  <testcase name="testTransactionScopedJMSContextInjection" time="0.35" classname="test.jms.injection.ClientTestNG"/>
+</testsuite>

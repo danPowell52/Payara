@@ -1,0 +1,632 @@
+     [echo] ANT PROJECT GlassFish-V3-QuickLook
+
+build:
+
+compile-tests:
+     [echo] compiling test client to ..//classes/test
+     [echo] Listing of source files: amx/AMXConfigProxyTests.java;amx/AMXCoreTests.java;amx/AMXOtherTests.java;amx/AMXProxyTests.java;amx/AMXTestBase.java;amx/Demo.java;amx/Interfaces.java;amx/InterfacesGlassfish.java
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/test
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:141: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 8 source files to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/test
+
+build:
+
+compile-tests:
+     [echo] compiling test client to ..//classes/test
+     [echo] Listing of source files: admin/BaseAsadminTest.java;admin/JdbcConnectionPoolTests.java;admin/JvmOptionTests.java;admin/OsgiAsadminTest.java;admin/WebtierTests.java;admin/util/GeneralUtils.java
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:141: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 6 source files to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/test
+
+build:
+
+compile-tests:
+     [echo] compiling test client to ../classes/test
+     [echo] Listing of source files: admincli/ExistStatusTests.java;admincli/RestartDomainTests.java;admincli/util/RtExec.java;admincli/util/StreamGobbler.java
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:141: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 4 source files to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/test
+
+setOSConditions:
+
+restart-server:
+
+restart-server-unix:
+     [echo] Successfully restarted the domain
+     [echo] Command restart-domain executed successfully.
+
+restart-server-windows:
+
+build:
+
+compile-tests:
+     [echo] compiling test client to ..//classes/test
+     [echo] Listing of source files: admin/AdminConsoleTests.java;admin/BaseAdminConsoleTest.java
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:141: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 2 source files to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/test
+
+build:
+
+compile-tests:
+     [echo] compiling test client to ..//classes/test
+     [echo] Listing of source files: admin/RestTests.java
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:141: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/test
+
+build:
+
+compile-util:
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:154: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 7 source files to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/test
+
+compile-tests:
+     [echo] compiling test client to ../../classes/test
+     [echo] Listing of source files: HelloOSGITestNG.java
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:141: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/test
+
+build-impl:
+
+archive-type:
+     [echo] archive-type is war
+
+build-war:
+     [echo] Now creating a war file ../../dist/basicosgi/osgitest.war
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/basicosgi/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/basicosgi
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:220: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/basicosgi/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/basicosgi/app/META-INF
+     [copy] Warning: Could not find file /home/user/gitRepo/Payara/appserver/tests/quicklook/osgitest/basicosgi/metadata/persistence.xml to copy.
+      [war] Building war: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/basicosgi/osgitest.war
+
+archive-type:
+     [echo] archive-type is war
+
+build-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-appclient-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-jar:
+
+compile-tests:
+     [echo] compiling test client to ../../classes/test
+     [echo] Listing of source files: HelloJSPTestNG.java
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:141: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/test
+
+build:
+
+build-impl:
+
+archive-type:
+     [echo] archive-type is war
+
+build-war:
+     [echo] Now creating a war file ../../dist/basicweb/hellojsp.war
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/basicweb/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/basicweb
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:220: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/basicweb/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/basicweb/app/META-INF
+     [copy] Warning: Could not find file /home/user/gitRepo/Payara/appserver/tests/quicklook/web/helloworld/metadata/persistence.xml to copy.
+      [war] Building war: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/basicweb/hellojsp.war
+
+archive-type:
+     [echo] archive-type is war
+
+build-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-appclient-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-jar:
+
+deploy-upload:
+
+setOSConditions:
+
+deploy-upload-v3-impl:
+     [echo] deploying hellojsp.war with --upload
+
+deploy-upload-v3-impl-unix:
+     [exec] Command deploy failed.
+     [exec] remote failure: Error occurred during deployment: Application with name hellojsp is already registered. Either specify that redeployment must be forced, or redeploy the application. Or if this is a new deployment, pick a different name. Please see server.log for more details.
+     [exec] Result: 1
+
+deploy-upload-v3-impl-windows:
+
+build-deploy:
+
+compile-tests:
+     [echo] compiling test client to ../../classes/test
+     [echo] Listing of source files: JSFWebTestNG.java
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:141: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/test
+
+build:
+
+build-impl:
+
+archive-type:
+     [echo] archive-type is war
+
+build-war:
+     [echo] Now creating a war file ../../dist/jsftest/jsfastrologer.war
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/jsftest/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/jsftest
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:220: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/jsftest/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/jsftest/app/META-INF
+     [copy] Warning: Could not find file /home/user/gitRepo/Payara/appserver/tests/quicklook/web/jsfastrologer/metadata/persistence.xml to copy.
+      [war] Building war: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/jsftest/jsfastrologer.war
+
+archive-type:
+     [echo] archive-type is war
+
+build-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-appclient-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-jar:
+
+deploy:
+
+setOSConditions:
+
+deploy-v3-impl:
+     [echo] deploying jsfastrologer.war
+
+deploy-v3-impl-unix:
+     [exec] Command deploy failed.
+     [exec] remote failure: Error occurred during deployment: Application with name jsfastrologer is already registered. Either specify that redeployment must be forced, or redeploy the application. Or if this is a new deployment, pick a different name. Please see server.log for more details.
+     [exec] Result: 1
+
+deploy-v3-impl-windows:
+
+build-deploy:
+
+compile-tests:
+     [echo] compiling test client to ../../classes/test
+     [echo] Listing of source files: JdbcUserTxTestNG.java
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:141: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/test
+
+build:
+
+build-impl:
+
+archive-type:
+     [echo] archive-type is war
+
+build-war:
+     [echo] Now creating a war file ../../dist/jdbcusertx/jdbcusertx.war
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/jdbcusertx/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/jdbcusertx
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:220: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 6 source files to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/jdbcusertx/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/jdbcusertx/app/META-INF
+     [copy] Warning: Could not find file /home/user/gitRepo/Payara/appserver/tests/quicklook/jdbc/jdbcusertx/metadata/persistence.xml to copy.
+      [war] Building war: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/jdbcusertx/jdbcusertx.war
+
+archive-type:
+     [echo] archive-type is war
+
+build-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-appclient-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-jar:
+
+deploy:
+
+setOSConditions:
+
+deploy-v3-impl:
+     [echo] deploying jdbcusertx.war
+
+deploy-v3-impl-unix:
+     [exec] Command deploy failed.
+     [exec] remote failure: Error occurred during deployment: Application with name jdbcusertx is already registered. Either specify that redeployment must be forced, or redeploy the application. Or if this is a new deployment, pick a different name. Please see server.log for more details.
+     [exec] Result: 1
+
+deploy-v3-impl-windows:
+
+build-deploy:
+
+compile-tests:
+     [echo] compiling test client to ../../classes/test
+     [echo] Listing of source files: JpaInjectEMFTestNG.java
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:141: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/test
+
+build:
+
+build-impl:
+
+archive-type:
+     [echo] archive-type is war
+
+build-war:
+     [echo] Now creating a war file ../../dist/jpainjectemf/jpainjectemf.war
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/jpainjectemf/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/jpainjectemf
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:220: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 4 source files to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/jpainjectemf/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/jpainjectemf/app/META-INF
+     [copy] Copying 1 file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/jpainjectemf/app/META-INF
+      [war] Building war: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/jpainjectemf/jpainjectemf.war
+
+archive-type:
+     [echo] archive-type is war
+
+build-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-appclient-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-jar:
+
+deploy:
+
+setOSConditions:
+
+deploy-v3-impl:
+     [echo] deploying jpainjectemf.war
+
+deploy-v3-impl-unix:
+     [exec] Application deployed with name jpainjectemf.
+     [exec] Command deploy executed successfully.
+
+deploy-v3-impl-windows:
+
+build-deploy:
+
+compile-tests:
+     [echo] compiling test client to ../../classes/test
+     [echo] Listing of source files: JpaValidationTestNG.java
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:141: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/test
+
+build:
+
+build-impl:
+
+archive-type:
+     [echo] archive-type is war
+
+build-war:
+     [echo] Now creating a war file ../../dist/jpavalidation/jpavalidation.war
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/jpavalidation/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/jpavalidation
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:220: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 4 source files to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/jpavalidation/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/jpavalidation/app/META-INF
+     [copy] Copying 1 file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/jpavalidation/app/META-INF
+      [war] Building war: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/jpavalidation/jpavalidation.war
+
+archive-type:
+     [echo] archive-type is war
+
+build-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-appclient-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-jar:
+
+deploy:
+
+setOSConditions:
+
+deploy-v3-impl:
+     [echo] deploying jpavalidation.war
+
+deploy-v3-impl-unix:
+     [exec] Application deployed with name jpavalidation.
+     [exec] Command deploy executed successfully.
+
+deploy-v3-impl-windows:
+
+build-deploy:
+
+compile-tests:
+     [echo] compiling test client to ../../classes/test
+     [echo] Listing of source files: HelloSecurityTestNG.java
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:141: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/test
+
+build:
+
+build-impl:
+
+archive-type:
+     [echo] archive-type is war
+
+build-war:
+     [echo] Now creating a war file ../../dist/security/hellojspsecure.war
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/security/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/security
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:220: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/security/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/security/app/META-INF
+     [copy] Warning: Could not find file /home/user/gitRepo/Payara/appserver/tests/quicklook/security/helloworld/metadata/persistence.xml to copy.
+      [war] Building war: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/security/hellojspsecure.war
+
+archive-type:
+     [echo] archive-type is war
+
+build-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-appclient-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-jar:
+
+deploy:
+
+setOSConditions:
+
+deploy-v3-impl:
+     [echo] deploying hellojspsecure.war
+
+deploy-v3-impl-unix:
+     [exec] remote failure: Error occurred during deployment: Application with name hellojspsecure is already registered. Either specify that redeployment must be forced, or redeploy the application. Or if this is a new deployment, pick a different name. Please see server.log for more details.
+     [exec] Command deploy failed.
+     [exec] Result: 1
+
+deploy-v3-impl-windows:
+
+build-deploy:
+
+compile-tests:
+     [echo] compiling test client to ../../classes/test
+     [echo] Listing of source files: SlsbnicmtTestNG.java
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:141: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/test
+
+build:
+
+build-impl:
+
+archive-type:
+     [echo] archive-type is war
+
+build-war:
+     [echo] Now creating a war file ../../dist/EJB_slsbnicmt/slsbnicmt.war
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/EJB_slsbnicmt/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/EJB_slsbnicmt
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:220: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 3 source files to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/EJB_slsbnicmt/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/EJB_slsbnicmt/app/META-INF
+     [copy] Copying 1 file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/EJB_slsbnicmt/app/META-INF
+      [war] Building war: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/EJB_slsbnicmt/slsbnicmt.war
+
+archive-type:
+     [echo] archive-type is war
+
+build-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-appclient-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-jar:
+
+deploy:
+
+setOSConditions:
+
+deploy-v3-impl:
+     [echo] deploying slsbnicmt.war
+
+deploy-v3-impl-unix:
+     [exec] Application deployed with name slsbnicmt.
+     [exec] Command deploy executed successfully.
+
+deploy-v3-impl-windows:
+
+build-deploy:
+
+compile-tests:
+     [echo] compiling test client to ../../classes/test
+     [echo] Listing of source files: SfulnoiTestNG.java
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:141: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/test
+
+build:
+
+build-impl:
+
+archive-type:
+     [echo] archive-type is war
+
+build-war:
+     [echo] Now creating a war file ../../dist/EJB_sfulnoi/sfulnoi.war
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/EJB_sfulnoi/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/EJB_sfulnoi
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:220: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 2 source files to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/EJB_sfulnoi/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/EJB_sfulnoi/app/META-INF
+     [copy] Warning: Could not find file /home/user/gitRepo/Payara/appserver/tests/quicklook/ejb/sfulnoi/metadata/persistence.xml to copy.
+      [war] Building war: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/EJB_sfulnoi/sfulnoi.war
+
+archive-type:
+     [echo] archive-type is war
+
+build-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-appclient-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-jar:
+
+deploy:
+
+setOSConditions:
+
+deploy-v3-impl:
+     [echo] deploying sfulnoi.war
+
+deploy-v3-impl-unix:
+     [exec] remote failure: Error occurred during deployment: Application with name sfulnoi is already registered. Either specify that redepCommand deploy failed.
+     [exec] loyment must be forced, or redeploy the application. Or if this is a new deployment, pick a different name. Please see server.log for more details.
+     [exec] Result: 1
+
+deploy-v3-impl-windows:
+
+build-deploy:
+
+compile-tests:
+     [echo] compiling test client to ../../classes/test
+     [echo] Listing of source files: test/bv/servlet/simple/SimpleBVServletTestNG.java
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:141: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/test
+
+build:
+
+build-impl:
+
+archive-type:
+     [echo] archive-type is war
+
+build-war:
+     [echo] Now creating a war file ../../dist/bv/simple-bv-servlet.war
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/bv/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/bv
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/bean-validator/simple-bv-servlet/build.xml:91: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 2 source files to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/bv/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/bv/app/META-INF
+     [copy] Warning: Could not find file /home/user/gitRepo/Payara/appserver/tests/quicklook/bean-validator/simple-bv-servlet/metadata/persistence.xml to copy.
+      [war] Building war: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/bv/simple-bv-servlet.war
+
+archive-type:
+     [echo] archive-type is war
+
+build-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-appclient-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-jar:
+
+deploy:
+
+setOSConditions:
+
+deploy-v3-impl:
+     [echo] deploying simple-bv-servlet.war
+
+deploy-v3-impl-unix:
+     [exec] Command deploy failed.
+     [exec] remote failure: Error occurred during deployment: Application with name simple-bv-servlet is already registered. Either specify that redeployment must be forced, or redeploy the application. Or if this is a new deployment, pick a different name. Please see server.log for more details.
+     [exec] Result: 1
+
+deploy-v3-impl-windows:
+
+build-deploy:
+
+compile-tests:
+     [echo] compiling test client to ../../classes/test
+     [echo] Listing of source files: ExtensionsTestNG.java
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/gfproject/build-impl.xml:141: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/test
+
+build:
+
+build-impl:
+
+archive-type:
+     [echo] archive-type is war
+
+build-war:
+     [echo] Now creating a war file ../../dist/weldtest/extensions.war
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/weldtest/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/weldtest/lib
+    [javac] /home/user/gitRepo/Payara/appserver/tests/quicklook/weld/extensions/build.xml:93: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 6 source files to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/weldtest/app
+    [mkdir] Created dir: /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/weldtest/app/META-INF
+     [copy] Copying 1 file to /home/user/gitRepo/Payara/appserver/tests/quicklook/classes/weldtest/app/META-INF
+      [jar] Building jar: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/weldtest/lib/extensions.jar
+      [war] Building war: /home/user/gitRepo/Payara/appserver/tests/quicklook/dist/weldtest/extensions.war
+
+archive-type:
+     [echo] archive-type is war
+
+build-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-appclient-ear:
+
+archive-type:
+     [echo] archive-type is war
+
+build-jar:
+
+deploy:
+
+setOSConditions:
+
+deploy-v3-impl:
+     [echo] deploying extensions.war
+
+deploy-v3-impl-unix:
+     [exec] Command deploy failed.
+     [exec] remote failure: Error occurred during deployment: Application with name extensions is already registered. Either specify that redeployment must be forced, or redeploy the application. Or if this is a new deployment, pick a different name. Please see server.log for more details.
+     [exec] Result: 1
+
+deploy-v3-impl-windows:
+
+build-deploy:

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ejb_remoteview" failures="0" tests="3" time="4.221" errors="0">
+  <properties/>
+  <testcase name="helloRemote" time="4.162" classname="test.ejb.remoteview.RemoteViewTestNG"/>
+  <testcase name="nonPortableGlobal" time="0.036" classname="test.ejb.remoteview.RemoteViewTestNG"/>
+  <testcase name="portableGlobal" time="0.022" classname="test.ejb.remoteview.RemoteViewTestNG"/>
+</testsuite>

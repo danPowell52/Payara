@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="jpa_validation" failures="0" tests="5" time="0.202" errors="0">
+  <properties/>
+  <testcase name="initialize" time="0.093" classname="test.jpa.jpavalidation.JpaValidationTestNG"/>
+  <testcase name="validatePersist" time="0.051" classname="test.jpa.jpavalidation.JpaValidationTestNG"/>
+  <testcase name="validateUpdate" time="0.006" classname="test.jpa.jpavalidation.JpaValidationTestNG"/>
+  <testcase name="validateRemove" time="0.042" classname="test.jpa.jpavalidation.JpaValidationTestNG"/>
+  <testcase name="verify" time="0.01" classname="test.jpa.jpavalidation.JpaValidationTestNG"/>
+</testsuite>

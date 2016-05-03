@@ -1,0 +1,386 @@
+     [echo] =============Starting TestNG functional tests from testng/testng_gd.xml ============
+   [testng] [Parser] Running:
+   [testng]   /home/user/gitRepo/Payara/appserver/tests/quicklook/testng/testng_gd.xml
+   [testng] 
+   [testng] RtExec.execute: /home/user/gitRepo/Payara/appserver/distributions/payara/target/stage/payara41/glassfish//bin/asadmin create-jdbc-connection-pool --port 5048 --datasourceclassname=org.apache.derby.jdbc.ClientDataSource --property DatabaseName=sun-appserv-samples:PortNumber=1527:serverName=localhost:Password=APP:User=APP QLJdbcPool
+   [testng] RtExec.execute: /home/user/gitRepo/Payara/appserver/distributions/payara/target/stage/payara41/glassfish//bin/asadmin ping-connection-pool --port 5048 DerbyPool
+   [testng] RtExec.execute: /home/user/gitRepo/Payara/appserver/distributions/payara/target/stage/payara41/glassfish//bin/asadmin ping-connection-pool --port 5048 QLJdbcPool
+   [testng] RtExec.execute: /home/user/gitRepo/Payara/appserver/distributions/payara/target/stage/payara41/glassfish//bin/asadmin delete-jdbc-connection-pool --port 5048 QLJdbcPool
+   [testng] PASSED: createJDBCPool
+   [testng] PASSED: pingJDBCPool
+   [testng] PASSED: deleteJDBCPool
+   [testng] PASSED: restartDomainTest
+   [testng] 
+   [testng] ===============================================
+   [testng]     admincli_tests
+   [testng]     Tests run: 4, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] Apr 28, 2016 9:06:53 AM com.sun.enterprise.v3.server.CommonClassLoaderServiceImpl findDerbyClient
+   [testng] INFO: Cannot find javadb client jar file, derby jdbc driver will not be available by default.
+   [testng] java.lang.RuntimeException: java.lang.reflect.UndeclaredThrowableException
+   [testng] 	at org.glassfish.admin.amx.core.proxy.ProxyFactory.getMBeanInfo(ProxyFactory.java:359)
+   [testng] 	at org.glassfish.admin.amx.core.proxy.ProxyFactory.getProxy(ProxyFactory.java:390)
+   [testng] 	at org.glassfish.admin.amx.core.proxy.ProxyFactory.toProxySet(ProxyFactory.java:522)
+   [testng] 	at org.glassfish.admin.amx.core.proxy.AMXProxyHandler.autoConvert(AMXProxyHandler.java:641)
+   [testng] 	at org.glassfish.admin.amx.core.proxy.AMXProxyHandler._invoke(AMXProxyHandler.java:816)
+   [testng] 	at org.glassfish.admin.amx.core.proxy.AMXProxyHandler.invoke(AMXProxyHandler.java:506)
+   [testng] 	at com.sun.proxy.$Proxy25.queryAll(Unknown Source)
+   [testng] 	at amxtest.Demo.run(Demo.java:173)
+   [testng] 	at amxtest.Demo.runDemo(Demo.java:158)
+   [testng] 	at amxtest.AMXCoreTests.testDemo(AMXCoreTests.java:148)
+   [testng] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+   [testng] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+   [testng] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+   [testng] 	at java.lang.reflect.Method.invoke(Method.java:606)
+   [testng] 	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:604)
+   [testng] 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:470)
+   [testng] 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:564)
+   [testng] 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:830)
+   [testng] 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+   [testng] 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+   [testng] 	at org.testng.TestRunner.runWorkers(TestRunner.java:678)
+   [testng] 	at org.testng.TestRunner.privateRun(TestRunner.java:624)
+   [testng] 	at org.testng.TestRunner.run(TestRunner.java:495)
+   [testng] 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:300)
+   [testng] 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:295)
+   [testng] 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:275)
+   [testng] 	at org.testng.SuiteRunner.run(SuiteRunner.java:190)
+   [testng] 	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:792)
+   [testng] 	at org.testng.TestNG.runSuitesLocally(TestNG.java:765)
+   [testng] 	at org.testng.TestNG.run(TestNG.java:699)
+   [testng] 	at org.testng.TestNG.privateMain(TestNG.java:824)
+   [testng] 	at org.testng.TestNG.main(TestNG.java:802)
+   [testng] Caused by: java.lang.reflect.UndeclaredThrowableException
+   [testng] 	at com.sun.proxy.$Proxy120.getMBeanInfo(Unknown Source)
+   [testng] 	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1482)
+   [testng] 	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:97)
+   [testng] 	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1329)
+   [testng] 	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1421)
+   [testng] 	at javax.management.remote.rmi.RMIConnectionImpl.getMBeanInfo(RMIConnectionImpl.java:925)
+   [testng] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+   [testng] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+   [testng] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+   [testng] 	at java.lang.reflect.Method.invoke(Method.java:606)
+   [testng] 	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:322)
+   [testng] 	at sun.rmi.transport.Transport$2.run(Transport.java:202)
+   [testng] 	at sun.rmi.transport.Transport$2.run(Transport.java:199)
+   [testng] 	at java.security.AccessController.doPrivileged(Native Method)
+   [testng] 	at sun.rmi.transport.Transport.serviceCall(Transport.java:198)
+   [testng] 	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:567)
+   [testng] 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+   [testng] 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.access$400(TCPTransport.java:619)
+   [testng] 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$1.run(TCPTransport.java:684)
+   [testng] 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$1.run(TCPTransport.java:681)
+   [testng] 	at java.security.AccessController.doPrivileged(Native Method)
+   [testng] 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:681)
+   [testng] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+   [testng] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+   [testng] 	at java.lang.Thread.run(Thread.java:745)
+   [testng] 	at sun.rmi.transport.StreamRemoteCall.exceptionReceivedFromServer(StreamRemoteCall.java:275)
+   [testng] 	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:252)
+   [testng] 	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:161)
+   [testng] 	at com.sun.jmx.remote.internal.PRef.invoke(Unknown Source)
+   [testng] 	at javax.management.remote.rmi.RMIConnectionImpl_Stub.getMBeanInfo(Unknown Source)
+   [testng] 	at javax.management.remote.rmi.RMIConnector$RemoteMBeanServerConnection.getMBeanInfo(RMIConnector.java:1080)
+   [testng] 	at org.glassfish.admin.amx.core.proxy.ProxyFactory.getMBeanInfo(ProxyFactory.java:350)
+   [testng] 	... 31 more
+   [testng] Caused by: java.lang.reflect.InvocationTargetException
+   [testng] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+   [testng] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+   [testng] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+   [testng] 	at java.lang.reflect.Method.invoke(Method.java:606)
+   [testng] 	at org.glassfish.admin.mbeanserver.AdminAuthorizedMBeanServer$Handler.invoke(AdminAuthorizedMBeanServer.java:107)
+   [testng] 	at com.sun.proxy.$Proxy120.getMBeanInfo(Unknown Source)
+   [testng] 	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1482)
+   [testng] 	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:97)
+   [testng] 	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1329)
+   [testng] 	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1421)
+   [testng] 	at javax.management.remote.rmi.RMIConnectionImpl.getMBeanInfo(RMIConnectionImpl.java:925)
+   [testng] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+   [testng] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+   [testng] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+   [testng] 	at java.lang.reflect.Method.invoke(Method.java:606)
+   [testng] 	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:322)
+   [testng] 	at sun.rmi.transport.Transport$2.run(Transport.java:202)
+   [testng] 	at sun.rmi.transport.Transport$2.run(Transport.java:199)
+   [testng] 	at java.security.AccessController.doPrivileged(Native Method)
+   [testng] 	at sun.rmi.transport.Transport.serviceCall(Transport.java:198)
+   [testng] 	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:567)
+   [testng] 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+   [testng] 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.access$400(TCPTransport.java:619)
+   [testng] 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$1.run(TCPTransport.java:684)
+   [testng] 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$1.run(TCPTransport.java:681)
+   [testng] 	at java.security.AccessController.doPrivileged(Native Method)
+   [testng] 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:681)
+   [testng] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+   [testng] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+   [testng] 	at java.lang.Thread.run(Thread.java:745)
+   [testng] Caused by: javax.management.InstanceNotFoundException: Failed to retrieve RMIServer stub: javax.naming.ServiceUnavailableException [Root exception is java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+   [testng] 	java.net.ConnectException: Connection refused]
+   [testng] 	at com.sun.enterprise.v3.admin.DynamicInterceptor.getInstanceConnection(DynamicInterceptor.java:252)
+   [testng] 	at com.sun.enterprise.v3.admin.DynamicInterceptor.getMBeanInfo(DynamicInterceptor.java:455)
+   [testng] 	... 30 more
+   [testng] PASSED: bootAMX
+   [testng]         Core AMX tests
+   [testng] PASSED: iterateAllSanityCheck
+   [testng] PASSED: testForBogusConfigAnnotations
+   [testng] PASSED: testDemo
+   [testng] PASSED: testAMXComplianceMonitorFailureCount
+   [testng] PASSED: testVariousGetters
+   [testng] PASSED: testMonitoringRoot
+   [testng] PASSED: testDomainRoot
+   [testng] PASSED: testBulkAccess
+   [testng] PASSED: testExt
+   [testng] PASSED: testTools
+   [testng] PASSED: testSystemInfo
+   [testng] PASSED: testPathnames
+   [testng] PASSED: testServerRuntime
+   [testng] PASSED: testLogging
+   [testng] PASSED: testForBogusAnnotations
+   [testng] PASSED: testRuntimeRoot
+   [testng] PASSED: testQuery
+   [testng] PASSED: testJ2EEDomain
+   [testng] 
+   [testng] ===============================================
+   [testng]     amx_tests
+   [testng]     Tests run: 19, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] ***** Login page not found.  Sleeping to allow app to deploy (1 of 60)...
+   [testng] ***** Login page not found.  Sleeping to allow app to deploy (2 of 60)...
+   [testng] ***** Login page not found.  Sleeping to allow app to deploy (3 of 60)...
+   [testng] ***** Login page not found.  Sleeping to allow app to deploy (4 of 60)...
+   [testng] PASSED: testDeployedAppPage
+   [testng] PASSED: testCommonTasks
+   [testng] PASSED: testRealmsList
+   [testng] 
+   [testng] ===============================================
+   [testng]     adminconsole_tests
+   [testng]     Tests run: 3, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: testManagementEndpoint
+   [testng] PASSED: testEndpointWithEncodedSlash
+   [testng] PASSED: testAdminCommandEndpoint
+   [testng] PASSED: testMonitoringEndpoint
+   [testng] PASSED: testChildConfigBeanEndpoint
+   [testng] 
+   [testng] ===============================================
+   [testng]     rest_tests
+   [testng]     Tests run: 5, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: staticHTMLPageTest
+   [testng] PASSED: testServerRunning
+   [testng] PASSED: simpleServletTest
+   [testng] PASSED: simpleJSPTestPage
+   [testng] 
+   [testng] ===============================================
+   [testng]     deploy_upload_test
+   [testng]     Tests run: 4, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: jsfIndexPageBasicTest
+   [testng] PASSED: jsfAppDeployedFirstPagetest
+   [testng] 
+   [testng] ===============================================
+   [testng]     jsf_hello_world
+   [testng]     Tests run: 2, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: testNoLeak
+   [testng] PASSED: testUserTx
+   [testng] 
+   [testng] ===============================================
+   [testng]     jdbc_user_tx
+   [testng]     Tests run: 2, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: persistWithInjectEMF
+   [testng] PASSED: lazyLoadingByQuery
+   [testng] 
+   [testng] ===============================================
+   [testng]     jpa_inject_emf
+   [testng]     Tests run: 2, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: initialize
+   [testng] PASSED: validatePersist
+   [testng] PASSED: validateUpdate
+   [testng] PASSED: validateRemove
+   [testng] PASSED: verify
+   [testng] 
+   [testng] ===============================================
+   [testng]     jpa_validation
+   [testng]     Tests run: 5, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: staticHTMLPageTest
+   [testng] PASSED: simpleServletTest
+   [testng] PASSED: simpleJSPTestPage
+   [testng] 
+   [testng] ===============================================
+   [testng]     security_hello_jsp
+   [testng]     Tests run: 3, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: singletonStartup
+   [testng] PASSED: singletonInjectLookup
+   [testng] 
+   [testng] ===============================================
+   [testng]     security_app_permissions
+   [testng]     Tests run: 2, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: helloRemote
+   [testng] PASSED: nonPortableGlobal
+   [testng] PASSED: portableGlobal
+   [testng] 
+   [testng] ===============================================
+   [testng]     ejb_remoteview
+   [testng]     Tests run: 3, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: singletonStartup
+   [testng] PASSED: singletonInjectLookup
+   [testng] 
+   [testng] ===============================================
+   [testng]     ejb_singleton_ear_redeploy
+   [testng]     Tests run: 2, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: SetName
+   [testng] PASSED: EJBInject
+   [testng] PASSED: GetName
+   [testng] PASSED: JpaPersist
+   [testng] PASSED: JpaRemove
+   [testng] PASSED: JpaVerify
+   [testng] 
+   [testng] ===============================================
+   [testng]     ejb_stateful_cmt_ni_war
+   [testng]     Tests run: 6, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: test
+   [testng] 
+   [testng] ===============================================
+   [testng]     ejb_cmp_ear
+   [testng]     Tests run: 1, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] RtExec.execute: /home/user/gitRepo/Payara/appserver/distributions/payara/target/stage/payara41/glassfish//bin/asadmin multimode --port 5048 --file /home/user/gitRepo/Payara/appserver/tests/quicklook/ejb/mdb/create_resources.asadmin
+   [testng] RtExec.execute: /home/user/gitRepo/Payara/appserver/distributions/payara/target/stage/payara41/glassfish//bin/asadmin deploy --port 5048 --retrieve=/home/user/gitRepo/Payara/appserver/tests/quicklook/./dist/mdb/ /home/user/gitRepo/Payara/appserver/tests/quicklook/./dist/mdb/ejb-ejb30-hello-mdbApp.ear 
+   [testng] RtExec.execute: /home/user/gitRepo/Payara/appserver/distributions/payara/target/stage/payara41/glassfish//bin/appclient -targetserver localhost:5037 -client /home/user/gitRepo/Payara/appserver/tests/quicklook/./dist/mdb/ejb-ejb30-hello-mdbAppClient.jar -name ejb-ejb30-hello-mdb-client 
+   [testng] RtExec.execute: /home/user/gitRepo/Payara/appserver/distributions/payara/target/stage/payara41/glassfish//bin/asadmin undeploy --port 5048 ejb-ejb30-hello-mdbApp
+   [testng] RtExec.execute: /home/user/gitRepo/Payara/appserver/distributions/payara/target/stage/payara41/glassfish//bin/asadmin multimode --port 5048 --file /home/user/gitRepo/Payara/appserver/tests/quicklook/ejb/mdb/delete_resources.asadmin
+   [testng] PASSED: createJMSRscTest("ejb/mdb/create_resources.asadmin")
+   [testng] PASSED: deployJMSAppTest("./dist/mdb/")
+   [testng] PASSED: runJMSAppTest("./dist/mdb/")
+   [testng] PASSED: undeployJMSAppTest
+   [testng] PASSED: deleteJMSRscTest("ejb/mdb/delete_resources.asadmin")
+   [testng] 
+   [testng] ===============================================
+   [testng]     MDB_tests
+   [testng]     Tests run: 5, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: executeServlet
+   [testng] 
+   [testng] ===============================================
+   [testng]     bv_servlet_simple
+   [testng]     Tests run: 1, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: jarExtensionBeanObserversTest
+   [testng] PASSED: extensionBeanObserversTest
+   [testng] PASSED: webBeanTest
+   [testng] PASSED: injectionTargetAdaptionTest
+   [testng] PASSED: extensionBeanReferenceTest
+   [testng] PASSED: jarExtensionBeanReferenceTest
+   [testng] 
+   [testng] ===============================================
+   [testng]     weld_tests
+   [testng]     Tests run: 6, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: createListener
+   [testng] PASSED: createPool
+   [testng] PASSED: createJoe
+   [testng] PASSED: ensureCreatedJoeExists
+   [testng] PASSED: deleteJoe
+   [testng] PASSED: ensureCreatedListenerExists
+   [testng] PASSED: deleteListener
+   [testng] PASSED: ensureDeletedListenerDoesNotExist
+   [testng] PASSED: createListenerWithOldParam
+   [testng] PASSED: deleteListener2
+   [testng] PASSED: pingPool
+   [testng] PASSED: deletedJoeDoesNotExist
+   [testng] PASSED: ensureCreatedPoolExists
+   [testng] PASSED: deletePool
+   [testng] PASSED: deletedPoolDoesNotExist
+   [testng] PASSED: createOsgiListener
+   [testng] 
+   [testng] ===============================================
+   [testng]     asadmin_tests
+   [testng]     Tests run: 16, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: simpleOSGIDeployTest
+   [testng] PASSED: simpleJSPTestPage
+   [testng] PASSED: simpleServletTest
+   [testng] PASSED: simpleOSGIUnDeployTest
+   [testng] 
+   [testng] ===============================================
+   [testng]     osgi_test
+   [testng]     Tests run: 4, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: riOsgiTest
+   [testng] PASSED: jaxb1Exist
+   [testng] PASSED: msvDatatypeExist
+   [testng] PASSED: jaxb1Marshalling
+   [testng] 
+   [testng] ===============================================
+   [testng]     wsit_jaxb_tests
+   [testng]     Tests run: 4, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] Waiting for 5 sec...
+   [testng] #########    FAILURE   #########
+   [testng] asadmin --host localhost --port 5048 --user admin --interactive=false --echo=true --terse=true list-instances --long=false --timeoutmsec 60000 --standaloneonly=false --nostatus=false
+   [testng] eein1-with-a-very-very-very-long-name   running  
+   [testng] eein2                                   running  
+   [testng] 
+   [testng] 
+   [testng] PASSED: createClusterTest
+   [testng] PASSED: createInstanceTest
+   [testng] PASSED: startInstanceTest
+   [testng] 
+   [testng] ===============================================
+   [testng]     cluster_setup
+   [testng]     Tests run: 3, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: deleteInstanceTest
+   [testng] PASSED: deleteClusterTest
+   [testng] 
+   [testng] ===============================================
+   [testng]     cluster_teardown
+   [testng]     Tests run: 2, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] PASSED: testRequestScopedJMSContextInjection
+   [testng] PASSED: testTransactionScopedJMSContextInjection
+   [testng] 
+   [testng] ===============================================
+   [testng]     jms_injection_jmsContext
+   [testng]     Tests run: 2, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] 
+   [testng] ===============================================
+   [testng] QuickLookTests
+   [testng] Total tests run: 106, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 

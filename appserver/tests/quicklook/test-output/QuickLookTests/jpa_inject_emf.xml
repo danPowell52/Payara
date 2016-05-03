@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="jpa_inject_emf" failures="0" tests="2" time="0.453" errors="0">
+  <properties/>
+  <testcase name="persistWithInjectEMF" time="0.134" classname="test.jpa.jpainjectemf.JpaInjectEMFTestNG"/>
+  <testcase name="lazyLoadingByQuery" time="0.318" classname="test.jpa.jpainjectemf.JpaInjectEMFTestNG"/>
+</testsuite>

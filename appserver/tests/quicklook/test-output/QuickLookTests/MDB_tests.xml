@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MDB_tests" failures="0" tests="5" time="19.578" errors="0">
+  <properties/>
+  <testcase name="createJMSRscTest" time="2.109" classname="test.mdb.MDBTests"/>
+  <testcase name="deployJMSAppTest" time="1.262" classname="test.mdb.MDBTests"/>
+  <testcase name="runJMSAppTest" time="13.131" classname="test.mdb.MDBTests"/>
+  <testcase name="undeployJMSAppTest" time="2.18" classname="test.mdb.MDBTests"/>
+  <testcase name="deleteJMSRscTest" time="0.892" classname="test.mdb.MDBTests"/>
+</testsuite>

@@ -1,0 +1,132 @@
+
+undeploy:
+
+setOSConditions:
+
+undeploy-v3-impl:
+     [echo] hellojsp
+
+undeploy-v3-impl-unix:
+     [exec] Command undeploy executed successfully.
+
+undeploy-v3-impl-windows:
+
+undeploy:
+
+setOSConditions:
+
+undeploy-v3-impl:
+     [echo] jsfastrologer
+
+undeploy-v3-impl-unix:
+     [exec] Command undeploy executed successfully.
+
+undeploy-v3-impl-windows:
+
+undeploy:
+
+setOSConditions:
+
+undeploy-v3-impl:
+     [echo] jdbcusertx
+
+undeploy-v3-impl-unix:
+     [exec] Command undeploy executed successfully.
+
+undeploy-v3-impl-windows:
+
+undeploy:
+
+setOSConditions:
+
+undeploy-v3-impl:
+     [echo] jpainjectemf
+
+undeploy-v3-impl-unix:
+     [exec] Command undeploy executed successfully.
+
+undeploy-v3-impl-windows:
+
+undeploy:
+
+setOSConditions:
+
+undeploy-v3-impl:
+     [echo] jpavalidation
+
+undeploy-v3-impl-unix:
+     [exec] Command undeploy executed successfully.
+
+undeploy-v3-impl-windows:
+
+undeploy:
+
+setOSConditions:
+
+undeploy-v3-impl:
+     [echo] hellojspsecure
+
+undeploy-v3-impl-unix:
+     [exec] Command undeploy executed successfully.
+
+undeploy-v3-impl-windows:
+
+undeploy:
+
+setOSConditions:
+
+undeploy-v3-impl:
+     [echo] slsbnicmt
+
+undeploy-v3-impl-unix:
+     [exec] Command undeploy executed successfully.
+
+undeploy-v3-impl-windows:
+
+undeploy:
+
+setOSConditions:
+
+undeploy-v3-impl:
+     [echo] sfulnoi
+
+undeploy-v3-impl-unix:
+     [exec] Command undeploy executed successfully.
+
+undeploy-v3-impl-windows:
+
+undeploy:
+
+setOSConditions:
+
+undeploy-v3-impl:
+     [echo] simple-bv-servlet
+
+undeploy-v3-impl-unix:
+     [exec] Command undeploy executed successfully.
+
+undeploy-v3-impl-windows:
+
+undeploy:
+
+setOSConditions:
+
+undeploy-v3-impl:
+     [echo] extensions
+
+undeploy-v3-impl-unix:
+     [exec] Command undeploy executed successfully.
+
+undeploy-v3-impl-windows:
+
+undeploy:
+
+setOSConditions:
+
+undeploy-v3-impl:
+     [echo] injection
+
+undeploy-v3-impl-unix:
+     [exec] Command undeploy executed successfully.
+
+undeploy-v3-impl-windows:
